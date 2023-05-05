@@ -1,0 +1,15 @@
+{
+  "name": "plugin",
+  "version": "1.0.0",
+  "description": "Test plugin",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajax-hook": "^2.1.3",
+    "webpack": "^5.81.0"
+  }
+}

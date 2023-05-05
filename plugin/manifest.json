@@ -1,0 +1,46 @@
+{
+    "name": "Malicious Request Interceptor",
+    "version": "1.0.0",
+    "description": "Malicious Request Interceptor",
+    "manifest_version": 3,
+    "author": "Sridatta Raghavendra Chintapalli",
+    "permissions":[
+        "storage",
+        "scripting",
+        "tabs",
+        "activeTab",
+        "webRequest",
+        "declarativeNetRequest"
+    ],
+    "host_permissions":[
+        "<all_urls>"
+    ],
+    "externally_connectable": {
+        "matches": [
+          "http://localhost:3000/*"
+        ]
+      },
+    "background":{
+        "service_worker": "background.js"
+    },
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Request Interceptor"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' http://localhost:3000/*; object-src 'self'",
+        "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+    },
+    "content_scripts": [{
+        "js": ["inject.js"],
+        "matches": ["http://*/*"]
+    }],
+    "web_accessible_resources": [{
+        "resources": ["intercept.js"],
+        "matches": ["http://*/*"]
+    },
+    {
+        "resources": ["runtime.js"],
+        "matches": ["http://*/*"]
+    }]
+}

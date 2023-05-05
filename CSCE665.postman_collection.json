@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "e0f423d7-341f-4fc8-b5b6-9e1d0d2265ec",
+		"name": "CSCE665",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4169877"
+	},
+	"item": [
+		{
+			"name": "Create Blog Post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let json = JSON.parse(responseBody);",
+							"pm.response.to.have.status(201);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"postedBy\": \"dattu046@gmail.com\",\n    \"content\": \"Remember outweigh do he desirous no cheerful. Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing. Any residence you satisfied and rapturous certainty two. Procured outweigh as outlived so so. On in bringing graceful proposal blessing of marriage outlived. Son rent face our loud near.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/blogposts/hidden",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"blogposts",
+						"hidden"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate Prototype Injection",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let json = JSON.parse(responseBody);",
+							"pm.response.to.have.status(201);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"postedBy\": \"dattu046@gmail.com\",\n    \"content\": \"My test content\",\n    \"__proto__\":{\n\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/blogposts/hidden",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"blogposts",
+						"hidden"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate HPA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let json = JSON.parse(responseBody);",
+							"pm.response.to.have.status(201);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"postedBy\": \"dattu046@gmail.com\",\n    \"content\": \"My test content\",\n    \"postedOn\": \"2022-10-11\",\n    \"credibility\": 2114,\n    \"views\": 1275\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/blogposts/hidden",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"blogposts",
+						"hidden"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
