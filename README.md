@@ -5,6 +5,7 @@ Test project and intergration test suite for payload classifier
 * NodeJS version 18.15.0
 * Python version 3.9.13
 * pip version 22.2.2
+* npm version 9.5.0
 * OS - Kali linux Linux 6.1.0-kali5-amd64
 
 ## This project contains the model server, sample application UI and backend, chrome extension and results viewer code.
