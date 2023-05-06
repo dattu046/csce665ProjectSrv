@@ -91,7 +91,10 @@ http://localhost:8080/blogposts
 * Input the malicious payloads to view the output.
 
 ## Recording for integration tests.
-
+```
+https://drive.google.com/file/d/1xH2949L3iTlxiCn6Zqfl15QtfEpMSDVr/view?usp=share_link
+```
 ## Recording for manually testing the UI.
-
-
+```
+https://drive.google.com/file/d/1g6HUL5xXBYjG8Rr1jkzI-LnKhZ1pfLSF/view?usp=share_link
+```
