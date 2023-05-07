@@ -99,3 +99,8 @@ https://drive.google.com/file/d/1xH2949L3iTlxiCn6Zqfl15QtfEpMSDVr/view?usp=share
 ```
 https://drive.google.com/file/d/1g6HUL5xXBYjG8Rr1jkzI-LnKhZ1pfLSF/view?usp=share_link
 ```
+## Recording for delay measurement when request is validated
+```
+https://drive.google.com/file/d/1-1EzZg95t-U81C9iM1egnktkoAhnPG6T/view?usp=share_link
+In the demo I showed only for one request, while in the paper I computed the average delay for 5 requests and showed the results.
+```
